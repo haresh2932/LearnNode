@@ -71,6 +71,7 @@ const server = http.createServer((req, res) => {
             } catch (error) {
                 res.writeHead(500, { 'Content-Type': 'application/json' })
                 res.end(JSON.stringify({ errMessage: error.message }))
+                
             }
         })
 
